@@ -24,9 +24,7 @@ const data = new Map();
 
 
 const sansar = new Discord.Client();
-const sansar2 = new Discord.Client();
 sansar.login(process.env.token1) 
-sansar2.login(process.env.token2) 
 
 
 
@@ -108,80 +106,51 @@ sansar.on("message", async (msg, member, guild) => {
 if (msg.content.toLowerCase() === "!cash") {
  msg.channel.send("owo cash")
 ;}});  
- sansar2.on("message", async (msg, member, guild) => {
-if (msg.content.toLowerCase() === "!cash") {
- msg.channel.send("owo cash")
-;}});   
+
 
 
 sansar.on("message", async (msg, member, guild) => {
 if (msg.content.toLowerCase() === "!daily") {
  msg.channel.send("owo daily")
 ;}});  
- sansar2.on("message", async (msg, member, guild) => {
-if (msg.content.toLowerCase() === "!daily") {
- msg.channel.send("owo daily")
-;}});   
 
 
 sansar.on("message", async (msg, member, guild) => {  
 if (msg.content.toLowerCase() === "!inv") {
  msg.channel.send("owo inv")
 ;}});  
- sansar2.on("message", async (msg, member, guild) => {
-if (msg.content.toLowerCase() === "!inv") {
- msg.channel.send("owo inv")
-;}});   
+
 
 
 sansar.on("message", async (msg, member, guild) => {  
 if (msg.content.toLowerCase() === "!ww") {
  msg.channel.send("owo w")
 ;}});  
- sansar2.on("message", async (msg, member, guild) => {
-if (msg.content.toLowerCase() === "!ww") {
- msg.channel.send("owo w")
-;}});   
 
 
 sansar.on("message", async (msg, member, guild) => {
 if (msg.content.toLowerCase() === "!ws") {
  msg.channel.send("owo sell all")
 ;}});   
- sansar2.on("message", async (msg, member, guild) => {
-if (msg.content.toLowerCase() === "!ws") {
- msg.channel.send("owo sell all")
-;}});   
+
  
 
 sansar.on("message", async (msg, member, guild) => {
 if (msg.content.toLowerCase() === "!wh") {
  msg.channel.send("owoh")
 ;}});  
- sansar2.on("message", async (msg, member, guild) => {
-if (msg.content.toLowerCase() === "!wh") {
- msg.channel.send("owoh")
-;}});   
+
 
  
 sansar.on("message", async (msg, member, guild) => {
 if (msg.content.toLowerCase() === "!xp") {
  msg.channel.send("owoxp")
 ;}}); 
- sansar2.on("message", async (msg, member, guild) => {
-if (msg.content.toLowerCase() === "!xp") {
- msg.channel.send("owoxp")
-;}});   
 
  
 sansar.on("message", async (msg, member, args, guild) => {
 if (msg.content.toLowerCase() === "!send") {
  msg.channel.send(`owo send ${msg.author} 50000`);}});  
-  
-sansar2.on("message", async (msg, member, args, guild) => {
-if (msg.content.toLowerCase() === "!send") {
- msg.channel.send(`owo send ${msg.author} 50000`);}});  
-    
 
   
 
@@ -190,78 +159,49 @@ sansar.on("message", async (msg, member, guild) => {
 if (msg.content.toLowerCase() === "!wc") {
  msg.channel.send("owo wc all")
 ;}}); 
- sansar2.on("message", async (msg, member, guild) => {
-if (msg.content.toLowerCase() === "!wc") {
- msg.channel.send("owo wc all")
-;}});   
+ 
 
 sansar.on("message", async (msg, member, guild) => {
 if (msg.content.toLowerCase() === "!lb") {
  msg.channel.send("owo lb all")
 ;}}); 
- sansar2.on("message", async (msg, member, guild) => {
-if (msg.content.toLowerCase() === "!lb") {
- msg.channel.send("owo lb all")
-;}});   
 
 
 sansar.on("message", async (msg, member, guild) => {
 if (msg.content.toLowerCase() === "!sellcommon") {
  msg.channel.send("owo sell commonweapons")
 ;}}); 
- sansar2.on("message", async (msg, member, guild) => {
-if (msg.content.toLowerCase() === "!sellcommon") {
- msg.channel.send("owo sell commonweapons")
-;}});   
 
 
 sansar.on("message", async (msg, member, guild) => {
 if (msg.content.toLowerCase() === "!selluncommon") {
  msg.channel.send("owo sell uncommonweapons")
 ;}});  
- sansar2.on("message", async (msg, member, guild) => {
-if (msg.content.toLowerCase() === "!selluncommon") {
- msg.channel.send("owo sell uncommonweapons")
-;}});   
 
 
  sansar.on("message", async (msg, member, guild) => {
 if (msg.content.toLowerCase() === "!sellrare") {
  msg.channel.send("owo sell rareweapons")
 ;}});  
- sansar2.on("message", async (msg, member, guild) => {
-if (msg.content.toLowerCase() === "!sellrare") {
- msg.channel.send("owo sell rareweapons")
-;}});   
 
 
 sansar.on("message", async (msg, member, guild) => {
 if (msg.content.toLowerCase() === "!sellmythic") {
  msg.channel.send("owo sell mythicweapons")
 ;}}); 
- sansar2.on("message", async (msg, member, guild) => {
-if (msg.content.toLowerCase() === "!sellmythic") {
- msg.channel.send("owo sell mythicweapons")
-;}});   
+ 
 
 sansar.on("message", async (msg, member, guild) => {
 if (msg.content.toLowerCase() === "!sellepic") {
  msg.channel.send("owo sell epicweapons")
 ;}}); 
- sansar2.on("message", async (msg, member, guild) => {
-if (msg.content.toLowerCase() === "!sellepic") {
- msg.channel.send("owo sell epicweapons")
-;}});   
-    
+
 
 sansar.on("message", async (msg, member, guild) => {
 if (msg.content.toLowerCase() === "!selllegendary") {
  msg.channel.send("owo sell legendaryweapons")
 ;}}); 
- sansar2.on("message", async (msg, member, guild) => {
-if (msg.content.toLowerCase() === "!selllegendary") {
- msg.channel.send("owo sell legendaryweapons")
-;}});   
+
 
 
 sansar.on("ready", () => {
@@ -270,11 +210,4 @@ sansar.on("ready", () => {
         const rastgelemesaj = mesaj[Math.floor(Math.random() *mesaj.length)];
         let kanal = sansar.channels.cache.get(process.env.sohbet)  
  kanal.send(rastgelemesaj)}, dakika);})  
-
- sansar2.on("ready", () => {
-   const dakika = süre[Math.floor(Math.random() *süre.length)]; 
-      setInterval(() => {
-        const rastgelemesaj = mesaj[Math.floor(Math.random() *mesaj.length)];
-        let kanal = sansar2.channels.cache.get(process.env.sohbet)  
- kanal.send(rastgelemesaj)}, dakika);}) 
 
