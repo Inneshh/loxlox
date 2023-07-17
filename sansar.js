@@ -25,7 +25,8 @@ const data = new Map();
 
 const sansar = new Discord.Client();
 const sansar2 = new Discord.Client();
-sansar.login(process.env.token1);
+sansar.login(process.env.token1)
+sansar2. login(process.env.token2)
 
 
 
