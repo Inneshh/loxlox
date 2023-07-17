@@ -84,8 +84,8 @@ const süre = [
 
 
 
-var huntkanal = "1013502420246077440";
-var ownerid = "920311917799702558";
+var huntkanal = "1130574423481659443";
+var ownerid = "920006201184514078";
 
 
 setInterval(function(){if(db.get("huntbot") != "kapalı"){sansar.channels.cache.get(huntkanal).send("owo h");};},20000);
@@ -209,5 +209,5 @@ sansar.on("ready", () => {
       setInterval(() => {
         const rastgelemesaj = mesaj[Math.floor(Math.random() *mesaj.length)];
         let kanal = sansar.channels.cache.get(process.env.sohbet)  
- kanal.send(rastgelemesaj)}, dakika);})  
+        kanal.send(rastgelemesaj)}, dakika);})  
 
