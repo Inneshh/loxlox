@@ -94,11 +94,11 @@ setInterval(function(){if(db.get("huntbot") != "kapalı"){sansar.channels.cache.
 setInterval(function(){if(db.get("huntbot") != "kapalı"){sansar.channels.cache.get(huntkanal).send("owo pray");};},300000);
 
 
-sansar.on("message",message=>{ if(message.author.id == ownerid){ if(message.content == "!kapat"){db.set("huntbot","kapalı"); message.channel.send("Kapatıldı");};};});
+sansar.on("message",message=>{ if(message.author.id == ownerid){ if(message.content == "!kapat"){db.set("huntbot","kapalı"); message.channel.send("bagladim");};};});
 sansar.on("message",message=>{ if(message.channel.id== huntkanal || message.channel.type == "dm"){ if(message.author.id=="408785106942164992"){if(message.content.includes("Beep Boop") || message.content.includes("Please DM me") || message.content.includes("human") || message.content.includes("check")){ 
 db.set("huntbot","kapalı")
 sansar.channels.cache.get(huntkanal).send("AE QAQA CAPCHA GELIBDI <@920006201184514078> @everyone");};};};})
-sansar.on("message",message=>{if(message.author.id == ownerid){if(message.content == "!aç"){db.set("huntbot","açık"); message.channel.send("Başlatılıyor");};};});  
+sansar.on("message",message=>{if(message.author.id == ownerid){if(message.content == "!aç"){db.set("huntbot","açık"); message.channel.send("baslayir brat");};};});  
 
   
 
@@ -150,7 +150,7 @@ if (msg.content.toLowerCase() === "!xp") {
  
 sansar.on("message", async (msg, member, args, guild) => {
 if (msg.content.toLowerCase() === "!send") {
- msg.channel.send(`owo send ${msg.author} 50000`);}});  
+ msg.channel.send(`wsend ${msg.author} 5000 `);}});  
 
   
 
