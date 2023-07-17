@@ -24,9 +24,8 @@ const data = new Map();
 
 
 const sansar = new Discord.Client();
-const sansar2 = new Discord.Client();
 sansar.login(process.env.token1)
-sansar2. login(process.env.token2)
+
 
 
 
@@ -212,4 +211,6 @@ sansar.on("ready", () => {
         const rastgelemesaj = mesaj[Math.floor(Math.random() *mesaj.length)];
         let kanal = sansar.channels.cache.get(process.env.sohbet)  
         kanal.send(rastgelemesaj)}, dakika);})  
+
+
 
