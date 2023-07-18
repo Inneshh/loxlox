@@ -168,39 +168,50 @@ if (msg.content.toLowerCase() === "!lb") {
 
 
 sansar.on("message", async (msg, member, guild) => {
-if (msg.content.toLowerCase() === "!sell cw") {
- msg.channel.send("owo sell commonweapons")
+if (msg.content.toLowerCase() === "!sellgun") {
+ msg.channel.send("wsell cw")
 ;}}); 
 
 
 sansar.on("message", async (msg, member, guild) => {
-if (msg.content.toLowerCase() === "!sell uw") {
- msg.channel.send("owo sell uncommonweapons")
+if (msg.content.toLowerCase() === "!sellgun") {
+ msg.channel.send("wsell uw")
 ;}});  
 
 
  sansar.on("message", async (msg, member, guild) => {
-if (msg.content.toLowerCase() === "!sell rw") {
- msg.channel.send("owo sell rareweapons")
+if (msg.content.toLowerCase() === "!sellgun") {
+ msg.channel.send("wsell rw")
 ;}});  
 
 
 sansar.on("message", async (msg, member, guild) => {
 if (msg.content.toLowerCase() === "!sell mw") {
- msg.channel.send("owo sell mythicweapons")
+ msg.channel.send("wsell mw")
 ;}}); 
  
 
 sansar.on("message", async (msg, member, guild) => {
-if (msg.content.toLowerCase() === "!sell ew") {
- msg.channel.send("owo sell epicweapons")
+if (msg.content.toLowerCase() === "!sellgun") {
+ msg.channel.send("wsell ew")
 ;}}); 
 
 
 sansar.on("message", async (msg, member, guild) => {
 if (msg.content.toLowerCase() === "!sell lw") {
- msg.channel.send("owo sell legendaryweapons")
+ msg.channel.send("wsell lw")
 ;}}); 
+
+sansar.on("message", async (msg, member, guild) => {
+if (msg.content.toLowerCase() === "!wq") {
+ msg.channel.send("wq")
+;}}); 
+
+sansar.on("message", async (msg, member, guild) => {
+if (msg.content.toLowerCase() === "!cl") {
+ msg.channel.send("wcl")
+;}}); 
+
 
 
 
