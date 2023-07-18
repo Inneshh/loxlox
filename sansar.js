@@ -97,7 +97,7 @@ setInterval(function(){if(db.get("huntbot") != "kapalı"){sansar.channels.cache.
 sansar.on("message",message=>{ if(message.author.id == ownerid){ if(message.content == "!bagla"){db.set("huntbot","kapalı"); message.channel.send("bagladim");};};});
 sansar.on("message",message=>{ if(message.channel.id== huntkanal || message.channel.type == "dm"){ if(message.author.id=="408785106942164992"){if(message.content.includes("Beep Boop") || message.content.includes("Please DM me") || message.content.includes("human") || message.content.includes("check")){ 
 db.set("huntbot","kapalı")
-sansar.channels.cache.get(huntkanal).send("* Capcha geldiyine göre bot dayandırıldı. <@920006201184514078> ");};};};})
+sansar.channels.cache.get(huntkanal).send("* Capcha geldiyine göre bot dayandırıldı.");};};};})
 sansar.on("message",message=>{if(message.author.id == ownerid){if(message.content == "!aç"){db.set("huntbot","açık"); message.channel.send("**AutoHunt başlatıldı.**");};};});  
 
   
