@@ -168,19 +168,19 @@ if (msg.content.toLowerCase() === "!lb") {
 
 
 sansar.on("message", async (msg, member, guild) => {
-if (msg.content.toLowerCase() === "!sellcommon") {
+if (msg.content.toLowerCase() === "!sell cw") {
  msg.channel.send("owo sell commonweapons")
 ;}}); 
 
 
 sansar.on("message", async (msg, member, guild) => {
-if (msg.content.toLowerCase() === "!selluncommon") {
+if (msg.content.toLowerCase() === "!sell uw") {
  msg.channel.send("owo sell uncommonweapons")
 ;}});  
 
 
  sansar.on("message", async (msg, member, guild) => {
-if (msg.content.toLowerCase() === "!sell rare") {
+if (msg.content.toLowerCase() === "!sell rw") {
  msg.channel.send("owo sell rareweapons")
 ;}});  
 
