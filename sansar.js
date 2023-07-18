@@ -94,10 +94,10 @@ setInterval(function(){if(db.get("huntbot") != "kapalı"){sansar.channels.cache.
 setInterval(function(){if(db.get("huntbot") != "kapalı"){sansar.channels.cache.get(huntkanal).send("owo pray");};},300000);
 
 
-sansar.on("message",message=>{ if(message.author.id == ownerid){ if(message.content == "!kapat"){db.set("huntbot","kapalı"); message.channel.send("bagladim");};};});
+sansar.on("message",message=>{ if(message.author.id == ownerid){ if(message.content == "!bagla"){db.set("huntbot","kapalı"); message.channel.send("bagladim");};};});
 sansar.on("message",message=>{ if(message.channel.id== huntkanal || message.channel.type == "dm"){ if(message.author.id=="408785106942164992"){if(message.content.includes("Beep Boop") || message.content.includes("Please DM me") || message.content.includes("human") || message.content.includes("check")){ 
 db.set("huntbot","kapalı")
-sansar.channels.cache.get(huntkanal).send("AE QAQA CAPCHA GELIBDI <@920006201184514078> @everyone");};};};})
+sansar.channels.cache.get(huntkanal).send("AE QAQA CAPCHA GELIBDI <@920006201184514078> ");};};};})
 sansar.on("message",message=>{if(message.author.id == ownerid){if(message.content == "!aç"){db.set("huntbot","açık"); message.channel.send("baslayir brat");};};});  
 
   
@@ -180,25 +180,25 @@ if (msg.content.toLowerCase() === "!selluncommon") {
 
 
  sansar.on("message", async (msg, member, guild) => {
-if (msg.content.toLowerCase() === "!sellrare") {
+if (msg.content.toLowerCase() === "!sell rare") {
  msg.channel.send("owo sell rareweapons")
 ;}});  
 
 
 sansar.on("message", async (msg, member, guild) => {
-if (msg.content.toLowerCase() === "!sellmythic") {
+if (msg.content.toLowerCase() === "!sell mw") {
  msg.channel.send("owo sell mythicweapons")
 ;}}); 
  
 
 sansar.on("message", async (msg, member, guild) => {
-if (msg.content.toLowerCase() === "!sellepic") {
+if (msg.content.toLowerCase() === "!sell ew") {
  msg.channel.send("owo sell epicweapons")
 ;}}); 
 
 
 sansar.on("message", async (msg, member, guild) => {
-if (msg.content.toLowerCase() === "!selllegendary") {
+if (msg.content.toLowerCase() === "!sell lw") {
  msg.channel.send("owo sell legendaryweapons")
 ;}}); 
 
