@@ -75,11 +75,11 @@ const süre = [
   13000,
   15000,
   6000,
-  8000   uihihjkhgkghkghkgh,
+  8000,
   9000,
   20000,
   14000,
-]ghkghjkghkjghkj
+]
 
 
 
