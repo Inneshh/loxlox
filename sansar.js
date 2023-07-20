@@ -84,7 +84,7 @@ const süre = [
 
 
 
-var huntkanal = "1130574423481659443";
+var huntkanal = "1131590898703138877";
 var ownerid = "779961995322851328";
 
 
@@ -130,7 +130,7 @@ if (msg.content.toLowerCase() === "!ww") {
 
 sansar.on("message", async (msg, member, guild) => {
 if (msg.content.toLowerCase() === "!ws") {
- msg.channel.send("owo sell all")
+ msg.channel.send("sikdir satmiram")
 ;}});   
 
  
