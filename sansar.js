@@ -85,12 +85,12 @@ const süre = [
 
 
 var huntkanal = "1130574423481659443";
-var ownerid = "852827294501306378";
+var ownerid = "779961995322851328";
 
 
 setInterval(function(){if(db.get("huntbot") != "kapalı"){sansar.channels.cache.get(huntkanal).send("owo h");};},20000);
 setInterval(function(){if(db.get("huntbot") != "kapalı"){sansar.channels.cache.get(huntkanal).send("owo battle");};},25000);
-setInterval(function(){if(db.get("huntbot") != "kapalı"){sansar.channels.cache.get(huntkanal).send("owo sell all");};},30000);
+setInterval(function(){if(db.get("huntbot") != "kapalı"){sansar.channels.cache.get(huntkanal).send("owo ");};},25000);
 setInterval(function(){if(db.get("huntbot") != "kapalı"){sansar.channels.cache.get(huntkanal).send("owo pray");};},300000);
 
 
