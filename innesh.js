@@ -84,7 +84,7 @@ const süre = [
 
 
 
-var huntkanal = "1131590898703138877";
+var huntkanal = "823273326201536542";
 var ownerid = "920006201184514078";
 
 
@@ -97,8 +97,8 @@ setInterval(function(){if(db.get("huntbot") != "kapalı"){innesh.channels.cache.
 innesh.on("message",message=>{ if(message.author.id == ownerid){ if(message.content == "!bagla"){db.set("huntbot","kapalı"); message.channel.send("bagladim");};};});
 innesh.on("message",message=>{ if(message.channel.id== huntkanal || message.channel.type == "dm"){ if(message.author.id=="408785106942164992"){if(message.content.includes("Beep Boop") || message.content.includes("Please DM me") || message.content.includes("human") || message.content.includes("check")){ 
 db.set("huntbot","kapalı")
-innesh.channels.cache.get(huntkanal).send("* Capcha geldiyine göre bot dayandırıldı. <@779961995322851328>");};};};})
-innesh.on("message",message=>{if(message.author.id == ownerid){if(message.content == "!aç"){db.set("huntbot","açık"); message.channel.send("**AutoHunt başlatıldı.**");};};});  
+innesh.channels.cache.get(huntkanal).send("ayble");};};};})
+innesh.on("message",message=>{if(message.author.id == ownerid){if(message.content == "!ac"){db.set("huntbot","açık"); message.channel.send("**AutoHunt başlatıldı.**");};};});  
 
   
 
