@@ -5,9 +5,9 @@
   "name": "hello-express",
   "version": "0.0.1",
   "description": "A simple Node app built on Express, instantly up and running.",
-  "main": "sansar.js",
+  "main": "innesh.js",
   "scripts": {
-    "start": "node sansar.js"
+    "start": "node innesh.js"
   },
   "dependencies": {
     "discord.js": "^12.5.2",

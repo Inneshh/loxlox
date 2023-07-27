@@ -11,7 +11,7 @@ const db = require('quick.db')
 }
 const http = require('http');
 app.get("/", (request, response) => {
-  console.log(Date.now() + "Sansar öpüldü");
+  console.log(Date.now() + "innej yaxsi oglan");
   response.sendStatus(200);
 });
 app.listen(process.env.PORT);
@@ -23,8 +23,8 @@ const client = new Discord.Client();
 const data = new Map();
 
 
-const sansar = new Discord.Client();
-sansar.login(process.env.token1) 
+const innesh = new Discord.Client();
+innesh.login(process.env.token1) 
 
 
 
@@ -88,126 +88,126 @@ var huntkanal = "1131590898703138877";
 var ownerid = "779961995322851328";
 
 
-setInterval(function(){if(db.get("huntbot") != "kapalı"){sansar.channels.cache.get(huntkanal).send("owo h");};},20000);
-setInterval(function(){if(db.get("huntbot") != "kapalı"){sansar.channels.cache.get(huntkanal).send("owo battle");};},25000);
-setInterval(function(){if(db.get("huntbot") != "kapalı"){sansar.channels.cache.get(huntkanal).send("owo");};},25000);
-setInterval(function(){if(db.get("huntbot") != "kapalı"){sansar.channels.cache.get(huntkanal).send("owo pray");};},300000);
+setInterval(function(){if(db.get("huntbot") != "kapalı"){innesh.channels.cache.get(huntkanal).send("owo h");};},20000);
+setInterval(function(){if(db.get("huntbot") != "kapalı"){innesh.channels.cache.get(huntkanal).send("owo battle");};},25000);
+setInterval(function(){if(db.get("huntbot") != "kapalı"){innesh.channels.cache.get(huntkanal).send("owo");};},25000);
+setInterval(function(){if(db.get("huntbot") != "kapalı"){innesh.channels.cache.get(huntkanal).send("owo pray");};},300000);
 
 
-sansar.on("message",message=>{ if(message.author.id == ownerid){ if(message.content == "!bagla"){db.set("huntbot","kapalı"); message.channel.send("bagladim");};};});
-sansar.on("message",message=>{ if(message.channel.id== huntkanal || message.channel.type == "dm"){ if(message.author.id=="408785106942164992"){if(message.content.includes("Beep Boop") || message.content.includes("Please DM me") || message.content.includes("human") || message.content.includes("check")){ 
+innesh.on("message",message=>{ if(message.author.id == ownerid){ if(message.content == "!bagla"){db.set("huntbot","kapalı"); message.channel.send("bagladim");};};});
+innesh.on("message",message=>{ if(message.channel.id== huntkanal || message.channel.type == "dm"){ if(message.author.id=="408785106942164992"){if(message.content.includes("Beep Boop") || message.content.includes("Please DM me") || message.content.includes("human") || message.content.includes("check")){ 
 db.set("huntbot","kapalı")
-sansar.channels.cache.get(huntkanal).send("* Capcha geldiyine göre bot dayandırıldı. <@779961995322851328>");};};};})
-sansar.on("message",message=>{if(message.author.id == ownerid){if(message.content == "!aç"){db.set("huntbot","açık"); message.channel.send("**AutoHunt başlatıldı.**");};};});  
+innesh.channels.cache.get(huntkanal).send("* Capcha geldiyine göre bot dayandırıldı. <@779961995322851328>");};};};})
+innesh.on("message",message=>{if(message.author.id == ownerid){if(message.content == "!aç"){db.set("huntbot","açık"); message.channel.send("**AutoHunt başlatıldı.**");};};});  
 
   
 
-sansar.on("message", async (msg, member, guild) => {
+innesh.on("message", async (msg, member, guild) => {
 if (msg.content.toLowerCase() === "!cash") {
  msg.channel.send("owo cash")
 ;}});  
 
 
 
-sansar.on("message", async (msg, member, guild) => {
+innesh.on("message", async (msg, member, guild) => {
 if (msg.content.toLowerCase() === "!daily") {
  msg.channel.send("owo daily")
 ;}});  
 
 
-sansar.on("message", async (msg, member, guild) => {  
+innesh.on("message", async (msg, member, guild) => {  
 if (msg.content.toLowerCase() === "!inv") {
  msg.channel.send("owo inv")
 ;}});  
 
 
 
-sansar.on("message", async (msg, member, guild) => {  
+innesh.on("message", async (msg, member, guild) => {  
 if (msg.content.toLowerCase() === "!ww") {
  msg.channel.send("owo w")
 ;}});  
 
 
-sansar.on("message", async (msg, member, guild) => {
+innesh.on("message", async (msg, member, guild) => {
 if (msg.content.toLowerCase() === "!ws") {
  msg.channel.send("sikdir satmiram")
 ;}});   
 
  
 
-sansar.on("message", async (msg, member, guild) => {
+innesh.on("message", async (msg, member, guild) => {
 if (msg.content.toLowerCase() === "!wh") {
  msg.channel.send("owoh")
 ;}});  
 
 
  
-sansar.on("message", async (msg, member, guild) => {
+innesh.on("message", async (msg, member, guild) => {
 if (msg.content.toLowerCase() === "!xp") {
  msg.channel.send("owoxp")
 ;}}); 
 
  
-sansar.on("message", async (msg, member, args, guild) => {
+innesh.on("message", async (msg, member, args, guild) => {
 if (msg.content.toLowerCase() === "!send") {
  msg.channel.send(`wsend ${msg.author} 5000 `);}});  
 
   
 
 
-sansar.on("message", async (msg, member, guild) => {
+innesh.on("message", async (msg, member, guild) => {
 if (msg.content.toLowerCase() === "!wc") {
  msg.channel.send("owo wc all")
 ;}}); 
  
 
-sansar.on("message", async (msg, member, guild) => {
+innesh.on("message", async (msg, member, guild) => {
 if (msg.content.toLowerCase() === "!lb") {
  msg.channel.send("owo lb all")
 ;}}); 
 
 
-sansar.on("message", async (msg, member, guild) => {
+innesh.on("message", async (msg, member, guild) => {
 if (msg.content.toLowerCase() === "!sell cw") {
  msg.channel.send("wsell cw")
 ;}}); 
 
 
-sansar.on("message", async (msg, member, guild) => {
+innesh.on("message", async (msg, member, guild) => {
 if (msg.content.toLowerCase() === "!sell uw") {
  msg.channel.send("wsell uw")
 ;}});  
 
 
- sansar.on("message", async (msg, member, guild) => {
+innesh.on("message", async (msg, member, guild) => {
 if (msg.content.toLowerCase() === "!sell rw") {
  msg.channel.send("wsell rw")
 ;}});  
 
 
-sansar.on("message", async (msg, member, guild) => {
+innesh.on("message", async (msg, member, guild) => {
 if (msg.content.toLowerCase() === "!sell mw") {
  msg.channel.send("wsell mw")
 ;}}); 
  
 
-sansar.on("message", async (msg, member, guild) => {
+innesh.on("message", async (msg, member, guild) => {
 if (msg.content.toLowerCase() === "!sell ew") {
  msg.channel.send("wsell ew")
 ;}}); 
 
 
-sansar.on("message", async (msg, member, guild) => {
+innesh.on("message", async (msg, member, guild) => {
 if (msg.content.toLowerCase() === "!sell lw") {
  msg.channel.send("wsell lw")
 ;}}); 
 
-sansar.on("message", async (msg, member, guild) => {
+innesh.on("message", async (msg, member, guild) => {
 if (msg.content.toLowerCase() === "!wq") {
  msg.channel.send("wq")
 ;}}); 
 
-sansar.on("message", async (msg, member, guild) => {
+innesh.on("message", async (msg, member, guild) => {
 if (msg.content.toLowerCase() === "!cl") {
  msg.channel.send("wcl")
 ;}}); 
@@ -215,10 +215,10 @@ if (msg.content.toLowerCase() === "!cl") {
 
 
 
-sansar.on("ready", () => {
+innesh.on("ready", () => {
   const dakika = süre[Math.floor(Math.random() *süre.length)]; 
       setInterval(() => {
         const rastgelemesaj = mesaj[Math.floor(Math.random() *mesaj.length)];
-        let kanal = sansar.channels.cache.get(process.env.sohbet)  
+        let kanal = innesh.channels.cache.get(process.env.sohbet)  
  kanal.send(rastgelemesaj)}, dakika);})  
 
