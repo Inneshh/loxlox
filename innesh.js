@@ -85,7 +85,7 @@ const süre = [
 
 
 var huntkanal = "1131590898703138877";
-var ownerid = "779961995322851328";
+var ownerid = "920006201184514078";
 
 
 setInterval(function(){if(db.get("huntbot") != "kapalı"){innesh.channels.cache.get(huntkanal).send("owo h");};},20000);
