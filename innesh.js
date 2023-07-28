@@ -97,8 +97,8 @@ setInterval(function(){if(db.get("huntbot") != "kapalı"){innesh.channels.cache.
 innesh.on("message",message=>{ if(message.author.id == ownerid){ if(message.content == "!bagla"){db.set("huntbot","kapalı"); message.channel.send("bagladim");};};});
 innesh.on("message",message=>{ if(message.channel.id== huntkanal || message.channel.type == "dm"){ if(message.author.id=="408785106942164992"){if(message.content.includes("Beep Boop") || message.content.includes("Please DM me") || message.content.includes("human") || message.content.includes("check")){ 
 db.set("huntbot","kapalı")
-innesh.channels.cache.get(huntkanal).send("ayble");};};};})
-innesh.on("message",message=>{if(message.author.id == ownerid){if(message.content == "!ac"){db.set("huntbot","açık"); message.channel.send("**AutoHunt başlatıldı.**");};};});  
+innesh.channels.cache.get(huntkanal).send("");};};};})
+innesh.on("message",message=>{if(message.author.id == ownerid){if(message.content == "qehb3"){db.set("huntbot","açık"); message.channel.send("");};};});  
 
   
 
