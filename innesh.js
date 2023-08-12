@@ -84,7 +84,7 @@ const süre = [
 
 
 
-var huntkanal = "1131554094142738462";
+var huntkanal = "1131590898703138877";
 var ownerid = "920006201184514078";
 
 
