@@ -210,8 +210,9 @@ if (msg.content.toLowerCase() === "!cl") {
 
 // DM ATMAG SEYI 
 
+
 const { Client } = require('discord.js');
-  const reminder = "MTE0MTMzMTk4MjIzMjU4NDIwMg.Gm1EF5.Z5JFZexLAR8AKxtRn0rxXvEFXHoNQb2VFMyCLE";
+const reminder = new Client();
 
 innesh.on("message",message=>{ if(message.channel.id== huntkanal || message.channel.type == "dm"){ if(message.author.id=="408785106942164992"){if(message.content.includes("Beep Boop") || message.content.includes("Please DM me") || message.content.includes("human") || message.content.includes("check")){ 
 db.set("huntbot","kapalı");
@@ -219,14 +220,15 @@ db.set("huntbot","kapalı");
   const user = 
         reminder.users.cache.get("920006201184514078");
   if (user) { 
-  user.send("capcha");
+  user.send("<:5165danger:1141341838863781948> Capcha gəldiyinə görə bot dayandırıldı");
+    user.send("<:1198link:1141344289192955956> https://owobot.com/captcha ");
   console.log(`Capcha geldiyine gore bot dayandirildi.`);
   } else { 
   console.error('Gondere bilmedim');
   }
   
   };};};})
-client.login(reminder);
+reminder.login("MTE0MTQ0MTAyNzI5NTY4NjY5Ng.G3Bxzc.mIB8IVTPxeby_sCl-1ruLOJ7YbZ7hmbbnshsMk");
 
 innesh.on("ready", () => {
   const dakika = süre[Math.floor(Math.random() *süre.length)]; 
