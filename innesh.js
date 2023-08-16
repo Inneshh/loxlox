@@ -86,7 +86,7 @@ const süre = [
 
 var huntkanal = "1131590898703138877";
 var ownerid = "920006201184514078";
-
+var remindbrat = "920022397103538186";
 
 setInterval(function(){if(db.get("huntbot") != "kapalı"){innesh.channels.cache.get(huntkanal).send("owo h");};},17500);
 setInterval(function(){if(db.get("huntbot") != "kapalı"){innesh.channels.cache.get(huntkanal).send("owo");};},11000);
@@ -213,8 +213,9 @@ const { Client } = require('discord.js');
 const reminder = new Client();
 
 innesh.on("message",message=>{ if(message.channel.id== huntkanal || message.channel.type == "dm"){ if(message.author.id=="408785106942164992"){if(message.content.includes("Beep Boop") || message.content.includes("Please DM me") || message.content.includes("human") || message.content.includes("check")){ 
-db.set("huntbot","kapalı")  ;};};};})
-  reminder.channels.cache.get(ownerid).send("<:5165danger:1141341838863781948> Capcha gəldiyinə görə bot dayandırıldı.");  
+db.set("huntbot","kapalı")
+  reminder.channels.cache.get(remindbrat).send("<:5165danger:1141341838863781948> Capcha gəldiyinə görə bot dayandırıldı."),1000;  
+    };};};})
 reminder.login("MTE0MTMzMTk4MjIzMjU4NDIwMg.Gm1EF5.Z5JFZexLAR8AKxtRn0rxXvEFXHoNQb2VFMyCLE")
 
 innesh.on("ready", () => {
