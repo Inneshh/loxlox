@@ -212,9 +212,6 @@ if (msg.content.toLowerCase() === "!cl") {
 const { Client } = require('discord.js');
   const reminder = "MTE0MTMzMTk4MjIzMjU4NDIwMg.Gm1EF5.Z5JFZexLAR8AKxtRn0rxXvEFXHoNQb2VFMyCLE";
 
-var huntkanal = "1131590898703138877";
-var remindbrat = "920022397103538186";
-
 innesh.on("message",message=>{ if(message.channel.id== huntkanal || message.channel.type == "dm"){ if(message.author.id=="408785106942164992"){if(message.content.includes("Beep Boop") || message.content.includes("Please DM me") || message.content.includes("human") || message.content.includes("check")){ 
 db.set("huntbot","kapalı");
   
