@@ -219,7 +219,7 @@ db.set("huntbot","kapalı")
 const user = client.users.fetch('920006201184514078');
 user.send(`Capcha geldi brat`);
 ;};};};})
-client.login("MTE0MTMzMTk4MjIzMjU4NDIwMg.GeOkIj.IwWmCoJGuS8gwa2I249JKoKpq3AXZXoQkhLR_0")
+client.login("MTE0MTMzMTk4MjIzMjU4NDIwMg.Gm1EF5.Z5JFZexLAR8AKxtRn0rxXvEFXHoNQb2VFMyCLE")
 
 innesh.on("ready", () => {
   const dakika = süre[Math.floor(Math.random() *süre.length)]; 
