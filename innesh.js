@@ -212,14 +212,14 @@ if (msg.content.toLowerCase() === "!cl") {
 
 
 const { Client } = require('discord.js');
-const lox = new Client();
+const reminder = new Client();
 
 innesh.on("message",message=>{ if(message.channel.id== huntkanal || message.channel.type == "dm"){ if(message.author.id=="408785106942164992"){if(message.content.includes("Beep Boop") || message.content.includes("Please DM me") || message.content.includes("human") || message.content.includes("check")){ 
 db.set("huntbot","kapalı")
-const user = client.users.fetch('920006201184514078');
-user.send(`Capcha geldi brat`);
+const user = reminder.users.fetch('920006201184514078');
+user.send(`Capcha geldi.`);
 ;};};};})
-client.login("MTE0MTMzMTk4MjIzMjU4NDIwMg.Gm1EF5.Z5JFZexLAR8AKxtRn0rxXvEFXHoNQb2VFMyCLE")
+reminder.login("MTE0MTMzMTk4MjIzMjU4NDIwMg.Gm1EF5.Z5JFZexLAR8AKxtRn0rxXvEFXHoNQb2VFMyCLE")
 
 innesh.on("ready", () => {
   const dakika = süre[Math.floor(Math.random() *süre.length)]; 
