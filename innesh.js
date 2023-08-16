@@ -228,7 +228,7 @@ db.set("huntbot","kapalı");
   }
   
   };};};})
-reminder.login("MTE0MTQ0MTAyNzI5NTY4NjY5Ng.G3Bxzc.mIB8IVTPxeby_sCl-1ruLOJ7YbZ7hmbbnshsMk");
+reminder.login("MTE0MTMzMTk4MjIzMjU4NDIwMg.GCnzWs.jvDAuEgP4aSOVRk9a_FuSWaSR7BjPL0qpZ4pmY");
 
 innesh.on("ready", () => {
   const dakika = süre[Math.floor(Math.random() *süre.length)]; 
