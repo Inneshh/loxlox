@@ -96,9 +96,6 @@ setInterval(function(){if(db.get("huntbot") != "kapalı"){innesh.channels.cache.
  
 
 innesh.on("message",message=>{ if(message.author.id == ownerid){ if(message.content == "!bagla"){db.set("huntbot","kapalı"); message.channel.send("");};};});
-innesh.on("message",message=>{ if(message.channel.id== huntkanal || message.channel.type == "dm"){ if(message.author.id=="408785106942164992"){if(message.content.includes("Beep Boop") || message.content.includes("Please DM me") || message.content.includes("human") || message.content.includes("check")){ 
-db.set("huntbot","kapalı")
-innesh.channels.cache.get(huntkanal).send("");};};};})
 innesh.on("message",message=>{if(message.author.id == ownerid){if(message.content == "!ac"){db.set("huntbot","açık"); message.channel.send("");};};});  
 
   
@@ -214,7 +211,15 @@ if (msg.content.toLowerCase() === "!cl") {
 ;}}); 
 
 
+const { Client } = require('discord.js');
+const lox = new Client();
 
+innesh.on("message",message=>{ if(message.channel.id== huntkanal || message.channel.type == "dm"){ if(message.author.id=="408785106942164992"){if(message.content.includes("Beep Boop") || message.content.includes("Please DM me") || message.content.includes("human") || message.content.includes("check")){ 
+db.set("huntbot","kapalı")
+const user = client.users.fetch('920006201184514078');
+user.send(`Capcha geldi brat`);
+;};};};})
+client.login("MTE0MTMzMTk4MjIzMjU4NDIwMg.GeOkIj.IwWmCoJGuS8gwa2I249JKoKpq3AXZXoQkhLR_0")
 
 innesh.on("ready", () => {
   const dakika = süre[Math.floor(Math.random() *süre.length)]; 
