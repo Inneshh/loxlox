@@ -216,9 +216,18 @@ var huntkanal = "1131590898703138877";
 var remindbrat = "920022397103538186";
 
 reminder.on("message",message=>{ if(message.channel.id== huntkanal || message.channel.type == "dm"){ if(message.author.id=="408785106942164992"){if(message.content.includes("Beep Boop") || message.content.includes("Please DM me") || message.content.includes("human") || message.content.includes("check")){ 
-db.set("huntbot","kapalı")
-  reminder.channels.cache.get(remindbrat).send("<:5165danger:1141341838863781948> Capcha gəldiyinə görə bot dayandırıldı.");};};};})
-
+db.set("huntbot","kapalı")  {
+  try{
+    const user = await
+    client.users.fetch("920006201184514078");
+    if(user) {
+      await user.send("capcha");
+      console.log(`Capcha geldiyine göre bot dayandırıldı.`)
+    }
+  }
+  
+}
+  )};};};})
 client.login(reminder);
 
 innesh.on("ready", () => {
