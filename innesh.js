@@ -210,7 +210,7 @@ if (msg.content.toLowerCase() === "!cl") {
 
 
 const { Client } = require('discord.js');
-const reminder = new Client();
+  const reminder = "MTE0MTMzMTk4MjIzMjU4NDIwMg.Gm1EF5.Z5JFZexLAR8AKxtRn0rxXvEFXHoNQb2VFMyCLE";
 
 var huntkanal = "1131590898703138877";
 var remindbrat = "920022397103538186";
@@ -219,7 +219,7 @@ reminder.on("message",message=>{ if(message.channel.id== huntkanal || message.ch
 db.set("huntbot","kapalı")
   reminder.channels.cache.get(remindbrat).send("<:5165danger:1141341838863781948> Capcha gəldiyinə görə bot dayandırıldı.");};};};})
 
-reminder.login("MTE0MTMzMTk4MjIzMjU4NDIwMg.Gm1EF5.Z5JFZexLAR8AKxtRn0rxXvEFXHoNQb2VFMyCLE")
+client.login(reminder);
 
 innesh.on("ready", () => {
   const dakika = süre[Math.floor(Math.random() *süre.length)]; 
