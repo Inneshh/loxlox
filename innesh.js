@@ -215,13 +215,18 @@ const { Client } = require('discord.js');
 var huntkanal = "1131590898703138877";
 var remindbrat = "920022397103538186";
 
-reminder.on("message",message=>{ if(message.channel.id== huntkanal || message.channel.type == "dm"){ if(message.author.id=="408785106942164992"){if(message.content.includes("Beep Boop") || message.content.includes("Please DM me") || message.content.includes("human") || message.content.includes("check")){ 
-db.set("huntbot","kapalı")
+innesh.on("message",message=>{ if(message.channel.id== huntkanal || message.channel.type == "dm"){ if(message.author.id=="408785106942164992"){if(message.content.includes("Beep Boop") || message.content.includes("Please DM me") || message.content.includes("human") || message.content.includes("check")){ 
+db.set("huntbot","kapalı");
+  
   const user = 
         reminder.users.cache.get("920006201184514078");
   if (user) { 
   user.send("capcha");
-  console.log(``)}
+  console.log(`Capcha geldiyine gore bot dayandirildi.`);
+  } else { 
+  console.error('Gondere bilmedim');
+  }
+  
   };};};})
 client.login(reminder);
 
