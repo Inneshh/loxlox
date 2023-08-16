@@ -93,8 +93,6 @@ setInterval(function(){if(db.get("huntbot") != "kapalı"){innesh.channels.cache.
 setInterval(function(){if(db.get("huntbot") != "kapalı"){innesh.channels.cache.get(huntkanal).send("owo battle");};},19000);
 setInterval(function(){if(db.get("huntbot") != "kapalı"){innesh.channels.cache.get(huntkanal).send("t!cookie chewix.");};},18000);
 setInterval(function(){if(db.get("huntbot") != "kapalı"){innesh.channels.cache.get(huntkanal).send("owo pray");};},300000);
- 
-
 innesh.on("message",message=>{ if(message.author.id == ownerid){ if(message.content == "!bagla"){db.set("huntbot","kapalı"); message.channel.send("");};};});
 innesh.on("message",message=>{if(message.author.id == ownerid){if(message.content == "!ac"){db.set("huntbot","açık"); message.channel.send("");};};});  
 
@@ -217,8 +215,8 @@ const reminder = new Client();
 innesh.on("message",message=>{ if(message.channel.id== huntkanal || message.channel.type == "dm"){ if(message.author.id=="408785106942164992"){if(message.content.includes("Beep Boop") || message.content.includes("Please DM me") || message.content.includes("human") || message.content.includes("check")){ 
 db.set("huntbot","kapalı")
 const user = reminder.users.fetch('920006201184514078');
-user.send(`Capcha geldi.`);
-;};};};})
+  reminder.channels.cache.get(user).send("<:5165danger:1141341838863781948> Capcha gəldiyinə görə bot dayandırıldı.");
+  
 reminder.login("MTE0MTMzMTk4MjIzMjU4NDIwMg.Gm1EF5.Z5JFZexLAR8AKxtRn0rxXvEFXHoNQb2VFMyCLE")
 
 innesh.on("ready", () => {
