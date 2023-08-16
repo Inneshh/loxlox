@@ -208,6 +208,7 @@ if (msg.content.toLowerCase() === "!cl") {
  msg.channel.send("wcl")
 ;}}); 
 
+// DM ATMAG SEYI 
 
 const { Client } = require('discord.js');
   const reminder = "MTE0MTMzMTk4MjIzMjU4NDIwMg.Gm1EF5.Z5JFZexLAR8AKxtRn0rxXvEFXHoNQb2VFMyCLE";
