@@ -30,10 +30,10 @@ innesh.login(process.env.token1)
 
 
 const mesaj = [
-"Selamün Aleyküm",
-"Aleyküm Selam",
-"Naber Kardeş",
-"İyidir Senden?",
+"Salam brat",
+"As qaqaw",
+"Necesen",
+"Şükür qaqa",
 "Bende iyiyim",
 "Allah iylik versin",
 "Amin",
