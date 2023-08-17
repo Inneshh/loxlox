@@ -94,8 +94,8 @@ setInterval(function(){if(db.get("huntbot") != "kapalı"){innesh.channels.cache.
 setInterval(function(){if(db.get("huntbot") != "kapalı"){innesh.channels.cache.get(huntkanal).send("owo battle");};},19000);
 setInterval(function(){if(db.get("huntbot") != "kapalı"){innesh.channels.cache.get(huntkanal).send("t!cookie chewix.");};},18000);
 setInterval(function(){if(db.get("huntbot") != "kapalı"){innesh.channels.cache.get(huntkanal).send("owo pray");};},300000);
-innesh.on("message",message=>{ if(message.author.id == ownerid){ if(message.content == "!bagla"){db.set("huntbot","kapalı"); message.channel.send("");};};});
-innesh.on("message",message=>{if(message.author.id == ownerid){if(message.content == "!ac"){db.set("huntbot","açık"); message.channel.send("");};};});  
+innesh.on("message",message=>{ if(message.author.id == ownerid){ if(message.content == "!bagla"){db.set("huntbot","kapalı"); message.channel.send("**[BOT]** Autohunt sistemi bağlandı.");};};});
+innesh.on("message",message=>{if(message.author.id == ownerid){if(message.content == "!ac"){db.set("huntbot","açık"); message.channel.send("**[BOT]** Autohunt sistemi açıldı.");};};});  
 
   
 
