@@ -228,7 +228,10 @@ db.set("huntbot","kapalı");
   console.error('Gondere bilmedim');
   }
   
-  };};};})
+  };};};});
+
+
+
 reminder.login("MTE0MTMzMTk4MjIzMjU4NDIwMg.GCnzWs.jvDAuEgP4aSOVRk9a_FuSWaSR7BjPL0qpZ4pmY");
 
 innesh.on("ready", () => {
