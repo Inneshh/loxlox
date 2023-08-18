@@ -22,13 +22,13 @@ const Discord = require('discord.js-selfbot');
 const client = new Discord.Client();
 const data = new Map();
 
-innesh.on('ready', () => {
+client.on('ready', () => {
   console.log('Bot is ready!');
-  innesh.user.setPresence({
+  client.user.setPresence({
     status: 'dnd', // Set status to "Do Not Disturb"
     activity: {
-      name: '/azeri wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww',
-      type: 'WATCHING'
+      name: '/azeri',
+      type: 'PLAYING'
     }
   });
 });
