@@ -11,7 +11,7 @@ const db = require('quick.db')
 }
 const http = require('http');
 app.get("/", (request, response) => {
-  console.log(Date.now() + "innej yaxsi oglan");
+  console.log(Date.now() + " - Started.");
   response.sendStatus(200);
 });
 app.listen(process.env.PORT);
@@ -22,12 +22,12 @@ const Discord = require('discord.js-selfbot');
 const client = new Discord.Client();
 const data = new Map();
 
-client.once('ready', () => {
+innesh.on('ready', () => {
   console.log('Bot is ready!');
-  client.user.setPresence({
+  innesh.user.setPresence({
     status: 'dnd', // Set status to "Do Not Disturb"
     activity: {
-      name: '/azeri',
+      name: '/azeri wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww',
       type: 'WATCHING'
     }
   });
