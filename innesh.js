@@ -25,7 +25,7 @@ const data = new Map();
 client.on('ready', () => {
   console.log('Bot is ready!');
   client.user.setPresence({
-    status: 'dnd', // Set status to "Do Not Disturb"
+    status: 'idle', // Set status to "Do Not Disturb"
     activity: {
       name: '/azeri',
       type: 'PLAYING'
