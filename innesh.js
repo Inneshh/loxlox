@@ -241,7 +241,16 @@ db.set("huntbot","kapalı");
   
   };};};});
 
-
+reminder.once('ready', () => {
+  console.log('Reminder hazir');
+  reminder.user.setPresence({
+    status: 'DND', // Set status to "Do Not Disturb"
+    activity: {
+      name: 'void',
+      type: 'WATCHING'
+    }
+  });
+});
 
 reminder.login("MTE0MTMzMTk4MjIzMjU4NDIwMg.GCnzWs.jvDAuEgP4aSOVRk9a_FuSWaSR7BjPL0qpZ4pmY");
 
