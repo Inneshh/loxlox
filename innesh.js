@@ -244,7 +244,7 @@ db.set("huntbot","kapalı");
 reminder.once('ready', () => {
   console.log('Reminder hazir');
   reminder.user.setPresence({
-    status: 'DND', // Set status to "Do Not Disturb"
+    status: 'idle', // Set status to "Do Not Disturb"
     activity: {
       name: 'void',
       type: 'WATCHING'
